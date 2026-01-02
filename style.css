@@ -1,0 +1,842 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --first: #EEECFA;
+    --sec: #DDEAFA;
+    --third: #F5CEE9;
+    --four: #B8B0D5;
+    --five: #7F9BC3;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    color: var(--first);
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    background-color: var(--first);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.navh1 {
+    color: var(--five);
+}
+
+#theam {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--five);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+#mainpagesection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: var(--five);
+    padding: 1rem;
+}
+
+.commomsectionproperty {
+    height: 100%;
+    width: 100%;
+    background-color: var(--five);
+    padding: 1rem;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+
+.div {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: var(--first);
+    height: 60%;
+    width: 24%;
+    border-radius: 2rem;
+    overflow: hidden;
+    -webkit-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+
+.div:hover {
+    -webkit-box-shadow: 0px 0px 1rem var(--four), 0px 0px 1rem var(--third), 0px 0px 1rem var(--sec);
+    box-shadow: 0px 0px 1rem var(--four), 0px 0px 1rem var(--third), 0px 0px 1rem var(--sec);
+    scale: 0.95;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+#music {
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.allmusicbox {
+    background-color: rgba(107, 106, 106, 0.114);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+}
+
+.musicdivs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45%;
+    gap: 10px;
+}
+
+.musicdivs audio {
+    height: 3rem;
+}
+
+audio::-webkit-media-controls-panel {
+    background: -webkit-gradient(linear, left top, right top, from(var(--sec)), color-stop(var(--first)), to(rgba(255, 255, 255, 0.345)));
+    background: linear-gradient(to right, var(--sec), var(--first), rgba(255, 255, 255, 0.345))
+}
+
+#heartIcon {
+    font-size: 2rem;
+    pointer-events: none;
+}
+
+#red {
+    font-size: 2rem;
+    color: red;
+    pointer-events: none;
+}
+
+#positive {
+    padding-top: 4.5rem;
+}
+
+.positiveContainer {
+    height: 90%;
+    margin-top: 1rem;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    background-color: rgba(100, 98, 98, 0.105);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.postiveformbox,
+.negativeform {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: var(--five);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+}
+
+.postiveformbox h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 12rem;
+}
+
+.positiviboxinput,
+#neagtivetextinput {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    width: 20rem;
+}
+
+.positiviboxinput::-webkit-input-placeholder,
+#neagtivetextinput::-webkit-input-placeholder {
+    color: white;
+}
+
+.positiviboxinput::-moz-placeholder,
+#neagtivetextinput::-moz-placeholder {
+    color: white;
+}
+
+.positiviboxinput:-ms-input-placeholder,
+#neagtivetextinput:-ms-input-placeholder {
+    color: white;
+}
+
+.positiviboxinput::-ms-input-placeholder,
+#neagtivetextinput::-ms-input-placeholder {
+    color: white;
+}
+
+.positiviboxinput::placeholder,
+#neagtivetextinput::placeholder {
+    color: white;
+}
+
+.commonbtn {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: black;
+    font-weight: 600;
+    background: -webkit-gradient(linear, left top, right top, from(var(--sec)), color-stop(var(--first)), to(white));
+    background: -o-linear-gradient(left, var(--sec), var(--first), white);
+    background: linear-gradient(to right, var(--sec), var(--first), white);
+}
+
+.commonbtn:hover {
+    -webkit-box-shadow: 0px 0px 10px var(--third), 0px 0px 10px var(--four);
+    box-shadow: 0px 0px 10px var(--third), 0px 0px 10px var(--four);
+    scale: 0.95
+}
+
+.msgbox,
+.msgcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 10px;
+    margin-bottom: 1rem;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--third)), to(var(--sec)));
+    background: -o-linear-gradient(left, var(--third) 50%, var(--sec));
+    background: linear-gradient(to right, var(--third) 50%, var(--sec));
+    border-radius: 1rem;
+}
+
+.date {
+    background-color: var(--five);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.positivepera,
+.negativepera {
+    word-break: break-all;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    height: 4rem;
+    width: 16rem;
+    background: -webkit-gradient(linear, left top, right top, from(var(--first)), to(var(--sec)));
+    background: -o-linear-gradient(left, var(--first), var(--sec));
+    background: linear-gradient(to right, var(--first), var(--sec));
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
+    display: none;
+}
+
+#emoji {
+    padding-top: 4.5rem;
+}
+
+.emojicontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.emojiinputbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(104, 103, 103, 0.308);
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 30rem;
+    border-radius: 2rem;
+    background: -webkit-gradient(linear, left top, right top, from(var(--sec)), color-stop(var(--first)), to(white));
+    background: -o-linear-gradient(left, var(--sec), var(--first), white);
+    background: linear-gradient(to right, var(--sec), var(--first), white);
+    height: 1.5rem;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+    background: var(--four);
+    cursor: pointer;
+}
+
+.emojieshowbox {
+    background-color: var(--sec);
+    height: 65vh;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.emojis {
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 5rem;
+    border-radius: 1rem;
+    background-color: #261631;
+}
+
+.emojis p {
+    font-size: 1.5rem;
+}
+
+.emojiepopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: -webkit-gradient(linear, left top, right bottom, from(var(--five)), color-stop(var(--four)), color-stop(var(--third)), color-stop(var(--four)), to(var(--five)));
+    background: -o-linear-gradient(left top, var(--five), var(--four), var(--third), var(--four), var(--five));
+    background: linear-gradient(to right bottom, var(--five), var(--four), var(--third), var(--four), var(--five));
+    padding: 2rem;
+    border-radius: 2rem;
+    display: none;
+    -webkit-transition: all ease-in 1s;
+    -o-transition: all ease-in 1s;
+    transition: all ease-in 1s;
+}
+
+#negative {
+    padding-top: 4.5rem;
+}
+
+.negativboxparent {
+    height: 90%;
+    margin-top: 1rem;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    background-color: rgba(100, 98, 98, 0.105);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.pri {
+    height: 100%;
+    width: 100%;
+    background-color: var(--five);
+    padding: 7rem 1rem 1rem 1rem;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.pribtn {
+    color: #B59DBD;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: black;
+    font-weight: 600;
+    background: -webkit-gradient(linear, left top, right top, from(var(--sec)), color-stop(var(--first)), to(white));
+    background: -o-linear-gradient(left, var(--sec), var(--first), white);
+    background: linear-gradient(to right, var(--sec), var(--first), white);
+    position: absolute;
+    right: 15%;
+    top: 11%
+}
+
+.pribtn:hover {
+    -webkit-box-shadow: 0px 0px 10px var(--third), 0px 0px 10px var(--four);
+    box-shadow: 0px 0px 10px var(--third), 0px 0px 10px var(--four);
+    scale: 0.95
+}
+
+.pricontainer {
+    margin-top: 1rem;
+    height: 80%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.previewsmsgdiv {
+    padding: 1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--third)), to(var(--sec)));
+    background: -o-linear-gradient(var(--third), var(--sec));
+    background: linear-gradient(var(--third), var(--sec));
+    border-radius: 1rem;
+}
+
+.previewsmsgp {
+    font-size: 1.3rem;
+}
+
+.back {
+    position: absolute;
+    right: 15%;
+    top: 11%;
+}
+
+
+/* media query for 1300 */
+@media (max-width:1300px) {
+    #theam {
+        font-size: 1.5rem;
+    }
+
+    #music {
+        padding: 6rem 0rem 0rem 0rem;
+    }
+
+    #positive {
+        padding-top: 6rem;
+    }
+
+    #emoji {
+        padding-top: 6rem;
+    }
+
+    #negative {
+        padding-top: 6rem;
+    }
+
+    .back {
+        top: 12%;
+    }
+}
+
+
+/* media query for 1200 */
+@media (max-width:1200px) {
+
+    .navh1 {
+        font-size: 1.5rem;
+    }
+
+    #mainpagesection {
+        padding: 7rem 1rem 1rem 1rem;
+    }
+
+    .commomsectionproperty {
+        width: 100%;
+    }
+
+    .div {
+        height: 45%;
+        width: 40%;
+    }
+
+    #music {
+        overflow: auto;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .pribtn {
+        top: 15%
+    }
+
+    .back {
+        top: 15%;
+    }
+}
+
+/* media  query for 1000 */
+@media(max-width:1000px) {
+    #mainpagesection {
+        padding-top: 10rem;
+    }
+
+    .div {
+        height: 50%;
+        width: 45%;
+    }
+
+    #music {
+        padding: 10rem 0rem 0rem 0rem;
+    }
+
+    .allmusicbox {
+        display: block;
+        padding: 2rem 1rem;
+
+    }
+
+    .musicdivs {
+        width: 100%;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+
+    #positive {
+        padding-top: 10rem;
+    }
+
+    .msgbox,
+    .msgcontainer {
+        padding: 1rem;
+    }
+
+    #emoji {
+        padding-top: 10rem;
+    }
+
+    .emojicontainer {
+        margin-top: 1rem;
+    }
+
+    #negative {
+        padding-top: 10rem;
+    }
+
+    .back {
+        top: 12%;
+    }
+}
+
+
+/* media query for 700 */
+
+@media (max-width:700px) {
+    #mainpagesection {
+        padding: 5rem 1rem 1rem 1rem;
+    }
+
+    .div {
+        height: 40%;
+        width: 40%;
+    }
+
+    #music {
+        padding: 5rem 0rem 0rem 0rem;
+    }
+
+    #positive {
+        padding-top: 5rem;
+    }
+
+    .positiveh2 {
+        font-size: 0.8rem;
+    }
+
+    .musicheadingh2,
+    .negativeh2 {
+        font-size: 0.9rem;
+    }
+
+    .postiveformbox h2 {
+        width: 10rem;
+    }
+
+    .positiviboxinput,
+    #neagtivetextinput {
+        width: 15rem;
+    }
+
+    .positiviboxinput::-webkit-input-placeholder,
+    #neagtivetextinput::-webkit-input-placeholder {
+        color: white;
+    }
+
+    .positiviboxinput::-moz-placeholder,
+    #neagtivetextinput::-moz-placeholder {
+        color: white;
+    }
+
+    .positiviboxinput:-ms-input-placeholder,
+    #neagtivetextinput:-ms-input-placeholder {
+        color: white;
+    }
+
+    .positiviboxinput::-ms-input-placeholder,
+    #neagtivetextinput::-ms-input-placeholder {
+        color: white;
+    }
+
+    .positiviboxinput::placeholder,
+    #neagtivetextinput::placeholder {
+        color: white;
+    }
+
+    #emoji {
+        padding-top: 5rem;
+    }
+
+    #negative {
+        padding-top: 5rem;
+    }
+
+    .pri {
+        padding: 7rem 1rem 1rem 1rem;
+
+    }
+
+    .back {
+        position: absolute;
+        right: 15%;
+        top: 11%;
+    }
+}
+
+
+/* media query for 500 */
+@media (max-width:500px) {
+
+    nav {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    #mainpagesection {
+        display: block;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .div {
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #music {
+        padding: 6rem 0rem 0rem 0rem;
+    }
+
+    .allmusicbox {
+        display: block;
+    }
+
+    .musicdivs {
+        width: 100%;
+    }
+
+    .musicheadingh2,
+    .negativeh2,
+    .positiveh2,
+    .emojih2 {
+        font-size: 0.75rem;
+    }
+
+    .positiveContainer {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .postiveformbox {
+        width: 100%;
+        padding: 0.4rem 0rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .postiveformbox h2 {
+        font-size: 0.6rem;
+        width: 5rem;
+    }
+
+    .positiviboxinput,
+    #neagtivetextinput {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        width: 8rem;
+    }
+
+    #emoji {
+        padding-top: 6rem;
+    }
+
+    .range {
+        width: 15rem;
+        height: 1rem;
+    }
+
+    .emojiepopup {
+        padding: 1rem 0.2rem;
+        border-radius: 2rem;
+        width: 21rem;
+        display: none;
+    }
+
+    #negative {
+        padding-top: 6rem;
+    }
+
+    .pribtn {
+        top: 11%
+    }
+
+    .back {
+        position: absolute;
+        right: 0%;
+        top: 11%;
+    }
+
+}
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

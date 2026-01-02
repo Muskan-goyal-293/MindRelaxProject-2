@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>“One Space for Music, Mood & Thoughts”</title>
+    <link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+
+
+       <h1 class="navh1">Feel. Reflect. Reset.</h1>
+
+    <select name="theam" id="theam">
+      
+      <option value="default">Default</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+<option value="brown">Brown</option>
+<option value="dark">Dark</option>
+<option value="light">Light</option>
+    </select>
+
+      </nav>
+      <section id="mainpagesection">
+        <div class="div musicmainpage" id="0">
+          <img src="./images/music.png" alt="" />
+        </div>
+        <div class="div positivemainpage" id="1">
+          <img src="./images/positive.png" alt="" />
+        </div>
+        <div class="div emojimainpage" id="2">
+          <img src="./images/emoji.png" alt="" />
+        </div>
+        <div class="div negativemainpage" id="3">
+          <img src="./images/said.png" alt="" />
+        </div>
+      </section>
+
+      <section class="commomsectionproperty music" id="music">
+        <h2 class="musicheadingh2">
+          "Every note is a reminder to slow down and stay present.",
+        </h2>
+        <button class="commonbtn back" id="0">Back</button>
+        <div class="allmusicbox"></div>
+      </section>
+
+      <section class="commomsectionproperty positive" id="positive">
+        <h2 class="positiveh2">positive</h2>
+        <button class="commonbtn back" id="1">Back</button>
+
+        <div class="positiveContainer">
+          <div class="postiveformbox">
+            <h2 class="length">
+              Length : <span class="lengthspan">0 / 150</span>
+            </h2>
+
+            <form class="positiveform">
+              <input
+                type="text"
+                class="positiviboxinput"
+                placeholder="Enter a Message"
+              />
+              <button class="commonbtn" id="add">Add Message</button>
+            </form>
+          </div>
+
+          <div class="allpositivemsg"></div>
+
+          <div class="popup">
+            <p class="popuppera">Your length is complete</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="commomsectionproperty emoji" id="emoji">
+        <h2 class="emojih2">Emoji</h2>
+        <button class="commonbtn back" id="2">Back</button>
+
+        <div class="emojicontainer">
+          <div class="emojiinputbox">
+            <input
+              type="range"
+              min="0"
+              max="10"
+              step="1"
+              value="0"
+              name=""
+              id=""
+              class="range"
+            />
+            <button class="commonbtn save" id="3">Save Mood</button>
+          </div>
+          <div class="emojieshowbox"></div>
+        </div>
+        <div class="emojiepopup">
+          <p class="modos">0 😡 🥴 😞 🙁 😭 😢 😝 😑 🙂 😀 😁 10</p>
+        </div>
+      </section>
+
+      <section class="commomsectionproperty" id="negative">
+        <h2 class="negativeh2">Negative</h2>
+
+        <button class="commonbtn back" id="3">Back</button>
+        <div class="negativboxparent">
+          <div class="negativformbox">
+            <form class="negativeform">
+              <input
+                type="text"
+                name="text"
+                id="neagtivetextinput"
+                placeholder="Write what is bothering you..."
+              />
+              <button class="commonbtn" id="negativebtn">Add Message</button>
+              <button class="commonbtn" id="pri">Last Message</button>
+            </form>
+          </div>
+
+          <div class="dispalynegativemsgbox"></div>
+        </div>
+      </section>
+      
+
+      <section class="pri">
+        <button class="pribtn"> Back</button>
+        <div class="pricontainer">
+          
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
